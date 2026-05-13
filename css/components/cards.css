@@ -1,0 +1,68 @@
+/*
+ * cards.css — Componente de cards e contato
+ */
+.c-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.c-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-action-primary), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.c-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-border-hover);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 30px var(--color-glow-blue);
+}
+.c-card:hover::before { opacity: 1; }
+
+.c-card__icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: var(--space-4);
+  filter: drop-shadow(0 0 8px currentColor);
+}
+.c-card__icon--blue   { color: var(--color-action-primary); }
+.c-card__icon--cyan   { color: var(--color-action-cyan); }
+.c-card__icon--green  { color: var(--color-action-green); }
+.c-card__icon--purple { color: var(--color-action-purple); }
+
+.c-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+}
+.c-card__description {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-4);
+}
+.c-card__tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-action-cyan);
+  background: rgba(0, 255, 255, 0.08);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-3);
+}
+
+.c-contact {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}

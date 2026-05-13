@@ -1,0 +1,18 @@
+/*
+ * main.css — Ponto de entrada com @layer (Aula 10 — Desafio Avançado)
+ * Sintaxe compatível com browsers modernos e Live Server.
+ */
+
+@layer tokens, reset, base, components;
+
+@import url('./tokens/primitives.css') layer(tokens);
+@import url('./tokens/semantic.css') layer(tokens);
+@import url('./tokens/spacing.css') layer(tokens);
+@import url('./tokens/typography.css') layer(tokens);
+
+@import url('./base/reset.css') layer(reset);
+
+@import url('./components/navbar.css') layer(components);
+@import url('./components/hero.css') layer(components);
+@import url('./components/cards.css') layer(components);
+@import url('./components/footer.css') layer(components);

@@ -1,0 +1,38 @@
+/*
+ * primitives.css — Tokens primitivos (uso interno)
+ * Convenção: prefixo _ indica que estes tokens NÃO devem ser usados
+ * diretamente nos componentes. Use sempre os tokens semânticos de semantic.css.
+ */
+:root {
+  /* Blues */
+  --_blue-900: #0a0e1a;
+  --_blue-800: #0d1224;
+  --_blue-700: #0f1a35;
+  --_blue-600: #112244;
+  --_blue-500: #1a3a6e;
+  --_blue-400: #1e5aff;
+  --_blue-300: #00aaff;
+  --_blue-200: #00d4ff;
+  --_blue-100: #7df9ff;
+
+  /* Cyans */
+  --_cyan-500: #00ffff;
+  --_cyan-400: #00e5ff;
+  --_cyan-300: #00bcd4;
+
+  /* Greens */
+  --_green-400: #00ff88;
+  --_green-300: #00e676;
+
+  /* Purples */
+  --_purple-400: #7c3aed;
+  --_purple-300: #a855f7;
+
+  /* Neutrals */
+  --_white:      #ffffff;
+  --_gray-100:   #e2e8f0;
+  --_gray-200:   #94a3b8;
+  --_gray-300:   #64748b;
+  --_gray-400:   #334155;
+  --_black:      #000000;
+}

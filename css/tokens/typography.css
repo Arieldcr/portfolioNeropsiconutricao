@@ -1,0 +1,29 @@
+/*
+ * typography.css — Tokens de tipografia
+ * Família, tamanhos, pesos e alturas de linha.
+ */
+:root {
+  --font-sans:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+  --font-display: 'Poppins', sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --leading-tight:  1.2;
+  --leading-normal: 1.6;
+  --leading-loose:  1.8;
+}

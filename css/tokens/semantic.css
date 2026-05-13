@@ -1,0 +1,30 @@
+/*
+ * semantic.css — Tokens semânticos
+ * Mapeiam os primitivos (_) para intenções de uso.
+ * ESTES são os tokens que os componentes devem referenciar.
+ */
+:root {
+  /* Superfícies */
+  --color-bg-primary:   var(--_blue-900);
+  --color-bg-secondary: var(--_blue-800);
+  --color-bg-card:      var(--_blue-700);
+  --color-bg-alt:       var(--_blue-600);
+
+  /* Textos */
+  --color-text-primary:   var(--_white);
+  --color-text-secondary: var(--_gray-200);
+  --color-text-muted:     var(--_gray-300);
+
+  /* Ações / Marca */
+  --color-action-primary:   var(--_blue-400);
+  --color-action-secondary: var(--_blue-200);
+  --color-action-cyan:      var(--_cyan-500);
+  --color-action-green:     var(--_green-400);
+  --color-action-purple:    var(--_purple-300);
+
+  /* Bordas e brilhos */
+  --color-border:       rgba(0, 170, 255, 0.2);
+  --color-border-hover: rgba(0, 212, 255, 0.6);
+  --color-glow-blue:    rgba(30, 90, 255, 0.4);
+  --color-glow-cyan:    rgba(0, 255, 255, 0.3);
+}
